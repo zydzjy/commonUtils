@@ -105,30 +105,4 @@ public class BytesUtils {
 		}
 		return -1;
 	}
-
-	public static void main(String[] args) {
-		/*
-		 * byte[] bytes1 = {'a','b','c','d','e','f'}; byte[] bytes2 =
-		 * {'a','b','c','d','e','f'};
-		 * 
-		 * long s = System.currentTimeMillis(); for(int i=0;i<100000;i++){
-		 * BytesUtils.equals(bytes1, bytes2);
-		 * 
-		 * //new String(bytes1).equals(new String(bytes2)); } long e =
-		 * System.currentTimeMillis();
-		 * System.out.println("time elpased:"+(e-s)/1000.f);
-		 */
-
-		byte[] bytes1 = { 'a', 'b', 'c', 'd', 'e', 'f' };
-		byte[] bytes2 = { 'd', 'e', 'f' };
-		long s = System.currentTimeMillis();
-		/*for (int i = 0; i < 100000; i++) {
-			BytesUtils.indexOf(bytes1, 0, bytes2);
-
-			// new String(bytes1).indexOf(new String(bytes2));
-		}*/
-		long e = System.currentTimeMillis();
-		System.out.println("time elpased:" + (e - s) / 1000.f);
-	}
-
 }
